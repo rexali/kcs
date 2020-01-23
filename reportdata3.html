@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+</head>
+<Style type="text/css">
+*{
+    box-sizing:border-box;
+}
+
+.col1, .col2, .col3{
+    width: 33.33%;
+    float: left;
+    padding: 15px;
+}
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+
+@media screen and (max-width:600px){
+  .col1,.col2,.col3{
+    width:50%;
+  } 
+}
+
+
+@media screen and (max-width:389px){
+  .col1,.col2,.col3{
+    width:100%;
+  } 
+}
+</Style>
+<body style="background:blue;">
+    <form style=" background:tan; max-width:700px; margin:auto;" name ="myForm " action = "" onsubmit="formData()" method= "post" autocomplete = "off" align = "">
+    <div class="container" >
+       <center><label for="progress">Progress: <progress value='100' max="100"></progress>100%</label></center>
+        <br><br>
+       <form action="" >
+           <fieldset>
+               <legend>Step 3 :</legend>
+        <div class="row">
+            <div class="col1"><label>Academic Performance :</label><br><textarea name="" id="" cols="20" rows="5"></textarea></div>
+            
+            <div class="col2"><label>General Behaviour :</label><br><textarea name="" id="" cols="20" rows="5"></textarea></div>
+            
+            <div class="col3"><label>Neatness :</label><br><input type="text"></div>
+        </div>  
+        
+        <div class="row">
+                <div class="col1"><label>Class Teacher's Name :</label><br><input type="text" value=""></div>
+                
+                <div class="col2"><label>Signature:</label><br><input type="text"></div>
+                
+                <div class="col3"><label>Date :</label><br><input type="text"></div>
+                 
+            </div>
+
+            <div class="row">
+                    <div class="col1"><label>Next Term's Begins :</label><br><input type="text" value=""></div>
+                    
+                    <div class="col2"><label>Next Term's Fees :</label><br><input type="text"></div>
+                    
+                    <div class="col3"><label>Fees Owing :</label><br><input type="text"></div>
+                     
+                </div>
+
+            <div class="row">
+                    <div class="col1"><label>Principal :</label><br><input type="text" value=""></div>
+                        
+                    <div class="col2"><label>Signature :</label><br><input type="text"></div>
+                        
+                    <div class="col3"><label>Date:</label><br><input type="text"></div>
+                         
+             </div>
+
+             <div class="row">
+                    <div class="col1"><label for="">Parent's Signature :</label><br><input type="text" value=""></div>
+                    
+                    <div class="col2"><label>Date :</label><br><input type="text"></div>
+                    
+                    <!--<div class="col3"><label></label><input type="text"></div>-->
+                     
+                </div><br><br>
+                <div class="row" style="text-align:center;"><input type="button" value="Save and Continue" style="text-align:center;"></div>
+        </div>
+
+    </fieldset>
+      </form>
+    </div>
+</body>
+</html>

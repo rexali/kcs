@@ -1,0 +1,188 @@
+body{
+    max-width: 100%;
+    border: 10px solid rgb(255, 72, 0);
+    border-image:url(border.png);
+    /*background: linear-gradient(tan,blue,rgb(129, 53, 3));*/
+
+}
+#frame{
+    display: none;
+}
+.modal{
+    display: none;
+    position: fixed; /* Stay in place */
+    z-index:3; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left:0;
+    right:0;
+    top: 0;
+    width: 70%; /* Full width */
+    height: 70%; /* Full height */
+    margin: auto;
+}
+/* Modal Content */
+.modal-content {
+    background-color:tan;
+    margin: auto;
+    padding: 20px;
+    border: 3px solid red;
+    width: 50%;
+    height:50%;
+    overflow: auto;
+}
+/* The Close Button */
+.close,.close1,.close2,.close3,.close4,.close5,.close6 {
+    color:green;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+.close:hover,.close1:hover,.close2:hover,.close3:hover,.close4:hover,.close5:hover,.close6:hover {
+    color:red;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#kcsLogo{
+    display: block;
+    float: left;
+    border-radius: 10px;
+
+}
+
+#kcsLogo1{
+    display: block;
+    float: right;
+    border-radius: 10px;
+}
+
+#header{
+    font-size:25px;
+    width: 100%;
+    height:150px;
+    text-align: center; 
+    background-color: rgb(235, 240, 243);
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    /*overflow: auto;*/
+    background-color:tan;
+}
+
+#footernav{
+    margin: auto;
+}
+
+li{
+    display: inline-block;
+}
+
+li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    border: 2px solid blue;
+}
+
+li a:hover {
+    background-color:green ;
+}
+li .dropdown{
+    display: inline-block;
+}
+
+.dropdown-content{
+    display:none;
+    position: absolute;
+    z-index: 1;
+    background-color: tan;
+}
+.dropdown-content a{
+display: block;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+#signin{
+    float: right;
+   }
+#registr{
+    float: right;
+    margin-right: 2px;
+}
+.grid-container{
+display:grid;
+grid-template-columns: auto auto;
+background-color: #2196F3;
+padding: 5px;
+}
+
+
+.grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding:30px;
+    font-size: 30px;
+    text-align: center;
+    
+  }
+.acc{
+    width: 100%;
+    padding: 18px;
+    font-size: 30px;
+}
+.panel{
+    display: none;
+}
+
+@media screen and (max-width:772px) {
+    li{
+        display: block;
+        width: 100%;
+       }
+
+    #signin{
+     float: none;
+    }
+
+    #kcsname{
+        display: block;
+        float: none;
+        margin:auto;
+        width: 70%;
+        font-size: 15px;
+        text-align: center; 
+
+    } 
+
+    #kcsLogo{
+        display: block;
+        width: 80px;
+        float: none;
+        margin: auto;
+    }
+    #kcsLogo1{
+        display:none;
+    }
+
+    ul{
+        margin-top: 10px;
+    }
+    .grid-container{
+        grid-template-columns: auto;
+    }
+    .grid-item {
+        padding:5px;
+        font-size: 15px;
+        text-align: center;
+        
+      }
+}

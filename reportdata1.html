@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+</head>
+<Style type="text/css">
+*{
+    box-sizing:border-box;
+}
+
+.col1, .col2, .col3{
+    width: 33.33%;
+    float: left;
+    padding: 15px;
+}
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+@media screen and (max-width:600px){
+  .col1,.col2,.col3{
+    width:50%;
+  } 
+}
+
+
+@media screen and (max-width:389px){
+  .col1,.col2,.col3{
+    width:100%;
+  } 
+}
+</Style>
+<body style="background:blue">
+    <form style="background:tan; max-width:700px; margin:auto;" name ="myForm " action = "" onsubmit="formData()" method= "post" autocomplete = "off" align = "">
+    <div class="container" >
+       <center><label for="progress">Progress: <progress value='40' max="100"></progress>40%</label></center>
+        <br><br>
+       <form action="" >
+           <fieldset>
+               <legend>Step 1 :</legend>
+        <div class="row">
+            <div class="col1"><label>First Name :</label><br><input type="text" name="firstname" value=""></div>
+            
+            <div class="col2"><label>Middle Name :</label><br><input type="text" name="middlename"></div>
+            
+            <div class="col3"><label>Last Name :</label><br><input type="text" name="lastname"></div>
+        </div>  
+        
+        <div class="row">
+                <div class="col1"><label>Class :</label><br><input type="text" name="class" value=""></div>
+                
+                <div class="col2"><label>Sex :</label><br><input type="text" name="sex"></div>
+                
+                <div class="col3"><label>No in Calss :</label><br><input type="text" name="no_in_class"></div>
+                 
+            </div>
+
+            <div class="row">
+                    <div class="col1"><label>Report for Period Ending :</label><br><input type="text" name="term" value=""></div>
+                    
+                    <div class="col2"><label>Position in Class :</label><br><input type="text" name="position"></div>
+                    
+                    <div class="col3"><label>Average Age :</label><br><input type="text" name="average_age"></div>
+                     
+                </div>
+
+            <div class="row">
+                    <div class="col1"><label>Age of Child :</label><br><input type="text" name="age" value=""></div>
+                        
+                    <div class="col2"><label>No.of Times School Opened :</label><br><input type="text" name="no_times_sch_opened"></div>
+                        
+                    <div class="col3"><label>Time Absent:</label><br><input type="text" name="times_sabsent"></div>
+                         
+             </div>
+
+             <div class="row">
+                    <div class="col1"><label>Last Term's Position :</label><br><input type="text" name="lposition" value=""></div>
+                    
+                    <div class="col2"><label>Last Term's Average :</label><br><input type="text" name="laverage"></div>
+             </div><br><br>
+                    
+                   
+                 <div class="row" style="text-align:center;"><input type="button" id="sub" value="Save and Continue"><span id="input" style="color:green"></span></div>            
+         </fieldset>
+      </form>
+    </div>
+</body>
+</html>
